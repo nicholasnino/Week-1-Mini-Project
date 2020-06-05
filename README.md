@@ -1,3 +1,4 @@
 # Week-1-Mini-Project
 Week 1 Mini-Project
-Blackjack
+
+Blackjack or 21
