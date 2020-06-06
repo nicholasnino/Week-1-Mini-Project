@@ -4,14 +4,14 @@ import random
 
 
 def play_game():
-    print("3 Games of Blackjack ahead of you!")
+    print("This game includes 3 exciting games of Blackjack in a row!")
     total_games = 0
     player_hands = 0
     dealer_hands = 0
     
     while total_games < 3:
         
-        print(" Game " + str(total_games + 1) + ". Dealing the cards.")
+        print("Game " + str(total_games + 1) + ". Let's start dealing the cards.")
         # Dealer cards
         dealer_cards = []
         # Player cards
@@ -35,7 +35,7 @@ def play_game():
             print("Dealer has 21 and wins!")
         elif sum(dealer_cards) > 21:
             player_hands += 1
-            print("Dealer has busted!")
+            print("Dealer has busted and loses!")
 
         # Sum of the Player cards
         while sum(player_cards) < 21:
@@ -56,14 +56,16 @@ def play_game():
 
         if sum(player_cards) > 21:
             dealer_hands += 1
-            print("You got busted, Dealer wins!")
+            print("You got busted, the Dealer wins!")
         elif sum(player_cards) == 21:
             player_hands += 1
             print("You have 21, you win!")
         
         print("Current Best of 3 Hands: ")
-        print("Dealer: " + str(dealer_hands) + "hands" + " - to - You: " + str(player_hands) + "hands.")
-        print("---Best---OF---THREE---")
+        print("Dealer: " + str(dealer_hands) + " hand(s)" + " --- You: " + str(player_hands) + " hand(s).")
+        print("----------------------------")
         total_games += 1
 
 play_game()
+
+       
